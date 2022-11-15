@@ -17,5 +17,5 @@ use App\Http\Controllers\UserController;
 
 Route::get('/',[UserController::class,'index']);
 Route::post('user',[UserController::class,'store']);
-Route::delete('user/{user}',[UserController::class,'destroy']);
+Route::delete('user/{user}',[UserController::class,'destroy'])->name('users.destroy');
 
